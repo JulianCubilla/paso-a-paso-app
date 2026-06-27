@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="PASO A PASO" content="La guía que transforma la procrastinación en acción y la duda en confianza.">
+    <link rel="stylesheet" href="styles.css">
+    <title>Paso a paso</title>
+</head>
+<body>
+   <div id="vista-menu-principal">
+         <h1 class="titulo_Pasoapaso">Paso a paso</h1>
+        <p class="descripcion">Tus grandes sueños se conquistan con pequeños triunfos diarios. <strong>Paso a paso</strong> 
+         es la guía que transforma la procrastinación en acción y la duda en confianza. Olvídate del agobio de no saber por dónde empezar. 
+         Te ayudamos a dividir tus metas más ambiciosas en tareas simples y manejables. 
+         Celebra cada logro, construye rachas de constancia y observa cómo, día a día, te conviertes en la persona que quieres ser.</p>
+        <div class="zona-navegacion">
+
+    <a href="#" id="btn-mostrar-login" class="boton-nav">Iniciar sesión</a>
+    
+    <!-- <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExewWphbThvZGV4CDJxZTR2dDJvdm5wc2U3EXB1OXliczdhdTc3eGQzbYz1Cd12MV9pbnR1cm5hbF9naWZfYnlfaWQmY3Q9Zw/xThtahALwuf50CmxkQ/giphy.gif" alt="Icono animado" class="gif-central"> -->
+    
+    <a href="#" id="btn-mostrar-registro" class="boton-nav">Crea tu cuenta</a>
+        
+
+    <p id="mensaje-saludo" style="display: none; font-weight: bold; color: #333;">Hola, Usuario</p>
+    <button id="btn-cerrar-sesion" class="boton-nav" style="display: none; background-color: #dc3545; color: white; border: none;">Salir</button>
+         </div>
+             <p class="podras"> <strong>Podras:</strong></p>
+             <article class="cuadros1">
+
+                <button id= "btn-tareas">
+                  <p class="sub1">
+                     <img src="https://media-public.canva.com/p74Ck/MAGycsp74Ck/1/t.png" width="90" height="80">
+                     </img>Registra tus tareas diarias</p>
+               </button>
+
+                <button id= "btn-recordatorios">
+                  <p class="sub1">
+                     <img src="https://media-public.canva.com/NRgvU/MAGYPGNRgvU/1/t.png" width="110" height="100">
+                     </img>Establece recordatorios</p>
+               </button>
+
+                <button id= "btn-progreso">
+                  <p class="sub1">
+                  <img src="https://media-public.canva.com/zrBKg/MAGRWgzrBKg/1/t.png" width="110" height="100">
+                  </img>Monitorea tu progreso</p>
+               </button>
+
+                <button id="btn-motivacion">
+                  <p class="sub1">
+                  <img src="https://media-public.canva.com/pW2Pk/MAF-JRpW2Pk/1/t.png" width="110" height="95">
+                  </img>Motivación diaria</p>
+               </button>
+
+                <button id="btn-amigos">
+                  <p class="sub1">
+                  <img src="https://media-public.canva.com/BR6A4/MAGzCHBR6A4/1/t.png" width="110" height="100">
+                  </img>Comparte tus logros con amigos</p>
+               </button>
+
+                <button id="btn-personalizar">
+                  <p class="sub1">
+                  <img src="https://media-public.canva.com/qoKww/MAFt8HqoKww/1/t.png" width="110" height="100">
+                  </img>Personaliza tu experiencia</p>
+               </button>
+
+                <button id="btn-riesgo">
+                  <p class="sub1">
+                  <img src="https://media-public.canva.com/-zC-c/MAGxWH-zC-c/1/t.png" width="110" height="100">
+                  </img>Análisis Predictivo de "Riesgo de Abandono"</p>
+               </button>
+
+                <button id="btn-dispositivos">
+                  <p class="sub1">
+                  <img src="https://media-public.canva.com/XAQiE/MAEWOvXAQiE/1/t.png" width="110" height="100">
+                  </img>Accede desde cualquier dispositivo</p>
+               </button>
+
+                <button id="btn-pomodoro">
+                  <p class="sub1">
+                  <img src="https://media-public.canva.com/uDkOw/MAGPzJuDkOw/1/t.png" width="110" height="100">
+                  </img>Técnicas de Productividad Integradas (pomodoro)</p>
+               </button>
+
+             </article>
+
+                <p class="invitacion">¡Únete a <strong>Paso a paso</strong> hoy y comienza a transformar tus metas en realidad, un pequeño paso a la vez!</p>
+                <br>
+                <footer>
+                <p>© 2025 Paso a paso. Todos los derechos reservados.</p>
+                </footer>
+</div>
+
+<div id="contenedor-modal" class="modal-oculto">
+               <div class="modal-contenido">
+                  <span id="cerrar-modal" class="cerrar-modal">&times;</span>
+                  <form id="form-login" class="formulario-modal">
+
+                     <h2>Iniciar sesión</h2>
+                     <label for="login-email">Correo:</label>
+                     <input type="email" id="login-email" required>
+
+                     <label for="login-pass">Contraseña:</label>
+                     <input type="password" id="login-pass" required>
+                     <button type="submit">Entrar</button>
+
+                     <p class="pie-formulario">¿No tienes cuenta? <a href="#" id="ir-a-registro">Regístrate aquí</a>
+                     </p>
+                  </form>
+
+                  <form id="form-registro" class="formulario-modal formulario-oculto">
+                     <h2>Crear cuenta</h2>
+                     <label for="registro-nombre">Nombre:</label>
+                     <input type="text" id="registro-nombre" required>
+
+                     <label for="registro-email">Correo:</label>
+                     <input type="email" id="registro-email" required>
+
+                     <label for="registro-contraña">Contraseña:</label>
+                     <input type="password" id="registro-contraseña" required>
+
+                     <button type="submit">Crear cuenta</button>
+
+                     <p class="pie-formulario">¿Ya tienes cuenta? <a href="#" id="ir-a-login">Inicia sesión aquí</a>
+                     </p>
+               </div>
+            </div>
+
+            <div id="modal-info" class="modal-oculto">
+            <div class="modal-contenido">
+
+            <span id="cerrar-info" class="cerrar-modal">&times;</span>
+            <!-- <img id="info-gif" src="" alt="Animación" class="gif-modal"> DESACTIVE PORQUE NO ANDA-->
+            <h2 id="info-titulo">Titulo que tengo que escribir</h2>
+            <p id="info-texto" style="font-size: 18px; color: #555; line-height: 1.5; margin-bottom: 25px;">
+            </p>
+            <button id="info-cta" type="button">Accion</button>
+            </div>
+            </div>
+
+
+<div id="vista-tareas" style="display: none;">
+    <div class="contenedor-tareas">
+        
+        <button id="btn-volver-menu" class="btn-volver">← Volver al menú</button>
+
+        <h2 style="text-align: left; margin-bottom: 20px;">Mejorando habitos 🚀</h2>
+
+        <div class="dashboard-stats">
+            <div class="stat-card">
+                <div class="stat-info">
+                    <h3>Progreso Semanal</h3>
+                    <p class="numero-grande">78%</p>
+                    <div class="barra-progreso-mini">
+                        <div class="relleno" style="width: 78%"></div>
+                    </div>
+                </div>
+                <div class="icono-stat">📊</div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-info">
+                    <h3>Tareas Completadas</h3>
+                    <p class="numero-grande" id="contador-tareas">0/0</p>
+                    <span class="texto-verde">¡Vamos que podes!</span>
+                </div>
+                <div class="icono-stat">✅</div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-info">
+                    <h3>Racha Actual</h3>
+                    <p class="numero-grande">2 días</p>
+                    <span class="texto-naranja">¡Segui así!</span>
+                </div>
+                <div class="icono-stat">🔥</div>
+            </div>
+        </div>
+
+        <div class="dashboard-graficos">
+    
+    <div class="columna-principal">
+    
+    <div class="grafico-card" style="margin-bottom: 20px;">
+        <div class="cabecera-grafico">
+            <h3>Progreso Semanal</h3>
+            <select><option>Esta semana</option></select>
+        </div>
+        
+        <div class="grafico-barras" id="barras-semanales">
+            <div class="barra" style="height: 40%;" data-dia="1" title="Lunes"></div>
+            <div class="barra" style="height: 70%;" data-dia="2" title="Martes"></div>
+            <div class="barra" style="height: 50%;" data-dia="3" title="Miércoles"></div>
+            <div class="barra" style="height: 85%;" data-dia="4" title="Jueves"></div>
+            <div class="barra" style="height: 80%;" data-dia="5" title="Viernes"></div>
+            <div class="barra" style="height: 10%;" data-dia="6" title="Sábado"></div>
+            <div class="barra" style="height: 10%;" data-dia="0" title="Domingo"></div> </div>
+        
+        <div class="eje-x">
+            <span>Lun</span><span>Mar</span><span>Mié</span><span>Jue</span><span>Vie</span><span>Sáb</span><span>Dom</span>
+        </div>
+    </div>
+
+    <div class="grafico-card">
+        <div class="cabecera-grafico">
+            <h3>Progreso Mensual</h3>
+            <select><option>2025</option></select>
+        </div>
+        
+        <div class="grafico-barras" id="barras-mensuales">
+            <div class="barra" style="height: 30%;" data-mes="0" title="Ene"></div>
+            <div class="barra" style="height: 50%;" data-mes="1" title="Feb"></div>
+            <div class="barra" style="height: 40%;" data-mes="2" title="Mar"></div>
+            <div class="barra" style="height: 60%;" data-mes="3" title="Abr"></div>
+            <div class="barra" style="height: 80%;" data-mes="4" title="May"></div>
+            <div class="barra" style="height: 75%;" data-mes="5" title="Jun"></div>
+            <div class="barra" style="height: 50%;" data-mes="6" title="Jul"></div>
+            <div class="barra" style="height: 40%;" data-mes="7" title="Ago"></div>
+            <div class="barra" style="height: 60%;" data-mes="8" title="Sep"></div>
+            <div class="barra" style="height: 70%;" data-mes="9" title="Oct"></div>
+            <div class="barra" style="height: 85%;" data-mes="10" title="Nov"></div>
+            <div class="barra" style="height: 95%;" data-mes="11" title="Dic"></div> </div>
+        
+        <div class="eje-x-mensual">
+            <span>E</span><span>F</span><span>M</span><span>A</span><span>M</span><span>J</span><span>J</span><span>A</span><span>S</span><span>O</span><span>N</span><span>D</span>
+        </div>
+    </div>
+
+</div>
+
+    <div class="columna-lateral">
+        
+        <div class="grafico-card calendario-container">
+            <div class="calendario-header">
+                <h3 id="mes-anio-texto">Cargando...</h3>
+                <div id="reloj-digital" class="reloj-estilo">00:00:00</div>
+            </div>
+
+            <div class="grid-calendario" id="grid-dias">
+                <div class="dia-semana">L</div>
+                <div class="dia-semana">M</div>
+                <div class="dia-semana">M</div>
+                <div class="dia-semana">J</div>
+                <div class="dia-semana">V</div>
+                <div class="dia-semana">S</div>
+                <div class="dia-semana">D</div>
+                </div>
+
+            <p style="text-align: center; font-size: 12px; color: #888; margin-top: 10px;">
+                <span style="color: #007bff;">●</span> Día Actual
+            </p>
+        </div>
+
+        <div class="grafico-card">
+            <h3>Rendimiento General</h3>
+            <div class="anillo-container">
+                <svg class="progress-ring" width="120" height="120">
+                    <circle class="progress-ring__circle-bg" stroke="#f0f0f0" stroke-width="10" fill="transparent" r="50" cx="60" cy="60"/>
+                    <circle class="progress-ring__circle" stroke="#28a745" stroke-width="10" fill="transparent" r="50" cx="60" cy="60"/>
+                </svg>
+                <div class="texto-centro">
+                    <span class="porcentaje-grande">0%</span>
+                    <span class="etiqueta-pequena">Eficiencia</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+        <div class="seccion-lista-tareas">
+            <h3>Mis Tareas de Hoy 📝</h3>
+            <div class="input-grupo">
+                <input type="text" id="input-nueva-tarea" placeholder="¿Qué tienes que hacer hoy?">
+                <button id="btn-agregar-tarea">Agregar</button>
+            </div>
+            <ul id="lista-tareas">
+                </ul>
+        </div>
+   </div>
+</div>
+
+<div id="vista-pomodoro" style="display: none;">
+    <div class="contenedor-pomodoro">
+        
+        <button id="btn-volver-menu-pomodoro" class="btn-volver">← Volver al menú</button>
+
+        <h2>Sala de Enfoque 🍅</h2>
+
+        <div class="temporizador-circulo">
+            <svg class="anillo-progreso" width="300" height="300">
+                <circle class="anillo-fondo" stroke="#f0f0f0" stroke-width="15" fill="transparent" r="130" cx="150" cy="150"/>
+                <circle class="anillo-relleno" stroke="#ff6347" stroke-width="15" fill="transparent" r="130" cx="150" cy="150"/>
+            </svg>
+            
+            <div class="tiempo-centro">
+                <span id="tiempo-display">25:00</span>
+                <span id="estado-texto">Listo para enfocar</span>
+            </div>
+        </div>
+
+        <div class="controles-pomodoro">
+            <button id="btn-iniciar-timer" class="btn-grande iniciar">▶ Iniciar</button>
+            <button id="btn-pausar-timer" class="btn-grande pausar" style="display: none;">⏸ Pausar</button>
+            <button id="btn-reiniciar-timer" class="btn-grande reiniciar">↻ Reiniciar</button>
+        </div>
+
+        <div class="atajos-tiempo">
+            <p>Tiempo personalizado:</p>
+            <div class="botones-rapidos">
+                <button class="btn-chip" onclick="setTiempo(15)">15 min</button>
+                <button class="btn-chip" onclick="setTiempo(25)">25 min</button>
+                <button class="btn-chip" onclick="setTiempo(30)">30 min</button>
+                <button class="btn-chip" onclick="setTiempo(45)">45 min</button>
+            </div>
+            
+            <div class="input-manual">
+                <input type="number" id="input-minutos" placeholder="Min" min="1" max="120">
+                <button id="btn-set-manual">Fijar</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<script type="module" src="script.js"></script>
+
+</body>
+</html>
