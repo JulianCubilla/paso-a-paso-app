@@ -4,7 +4,7 @@
 
 **Paso a Paso** es una aplicación web de productividad personal que ayuda a transformar la procrastinación en acción. Permite dividir metas ambiciosas en tareas simples y manejables, dándole seguimiento al progreso diario, semanal y mensual del usuario.
 
-🔗 **[Ver demo en vivo](#)** <!-- reemplazar cuando esté activado GitHub Pages -->
+🔗 **[Ver demo en vivo](https://juliancubilla.github.io/paso-a-paso-app/)**
 
 ---
 
